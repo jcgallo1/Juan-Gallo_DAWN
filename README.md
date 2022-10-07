@@ -1,5 +1,5 @@
 # :fire: Repositorio de proyectos DAWN :fire: 
-## by Juan-Gallo_DAWN :robot:
+## by Juan Carlos Gallo Muñoz :robot:
 
 
 
