@@ -3,13 +3,13 @@
 
 
 
-[Proyecto 01](proyecto01)
+[Proyecto 01](proyecto%2001)
 
 
-[Proyecto 02](proyecto02) 
+[Proyecto 02](proyecto%2002) 
 
 
-[Proyecto 03](proyecto03) 
+[Proyecto 03](proyecto%2003) 
 
 
-[Proyecto 04](proyecto04) 
+[Proyecto 04](proyecto%2004) 
