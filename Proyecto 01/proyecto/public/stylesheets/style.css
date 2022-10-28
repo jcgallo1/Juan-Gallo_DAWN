@@ -1,8 +1,214 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+html{
+  background-color: #fdff00; 
+  font-family: 'Roboto Mono', monospace;
+  
 }
 
-a {
-  color: #00B7FF;
+#Titulo{
+  background-color: white;
+  padding: 3rem;
+  text-align: center;
+  margin: 0;
+  
+}
+#container-presentacion{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-image: url(../images/wallpapersden.com_cyberpunk-2077-background-logo_4096x2160.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+}
+
+#titulo-yo:hover{
+  font-size: 45px;
+  color: white;
+}
+#aboutme{
+  text-align: justify;
+  font-size: 12px;
+}
+#container-presentacion div ~ div{
+  background-color: #00ebff;
+  border: #fdff00 solid;
+  padding: 2rem 2rem 1rem 1rem;
+  border-radius: 5%; 
+  align-self: flex-end;
+}
+
+#img_yo{
+  border: #fdff00 solid;
+  border-radius: 100%;
+  height: 25rem;
+  
+}
+
+#container-hf{
+  display: flex;
+  background-image: url(../images/peakpx.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+#h2-h{
+  text-decoration: solid;
+}
+#container-hf div > ol{
+  border: black solid;
+  background-color: red;
+}
+.l1{
+  background-color:#00ebff ;
+  padding: 1rem;
+}
+.l2{
+  background-color: black;
+  padding: 1rem;
+  color: white;
+}
+.l1:hover{
+  background-color: white;
+}
+.l2:hover{
+  background-color: white;
+  color:black
+}
+#container-iE{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-image: url(../images/Cyberpunk-2077-video-game-characters-yellow-background-1859719-wallhere.com.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#idiomas{
+  background-color: black;
+  border: white 10px solid;
+  padding: 0 2rem 2rem 2rem;
+  border-right: 0;
+  
+}
+
+#idiomas  h2{
+  color: white;
+  text-align: center;
+}
+.caja-idiomas{
+  background-color: white;
+  margin-top: 2rem;
+  padding: 2rem;
+}
+
+#lenguajes{
+  background-color: #00ebff;
+  border: black 10px solid;
+  border-left: 0;
+  padding: 2rem;
+  text-align: center;
+}
+#caja-lenguajes{
+  display: grid;
+  grid-template-columns: auto auto ; 
+  gap: 2rem;
+  background-color: white;
+  border: solid black;
+  padding: 1rem;
+}
+#container-iE + hr+ h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+#container-metas{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  background-image: url(../images/wallpapersden.com_cyberpunk-2077-background-logo_4096x2160.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  border: black 12px solid;
+}
+
+#circulo1{
+  background-color: white;
+  border-radius: 100%;
+  border: solid 5px;
+  align-self: flex-start;
+  margin-left: 4rem;
+  margin-top: 3rem;
+  padding: 3rem 1rem 3rem 1rem;
+}
+#circulo2{
+  display: flex;
+  background-color: white;
+  border-radius: 100%;
+  border: solid 5px;
+  margin-top: 10rem;
+  align-self:center;
+  padding: 4.5rem 2rem 4.5rem 2rem;
+}
+
+#circulo3{
+  background-color: white;
+  border-radius: 100px;
+  border: solid 5px;
+  align-self: flex-start ;
+  padding:6.6rem 1rem 6.6rem 1rem;
+  
+}
+#circulo4{
+  background-color: white;
+  border-radius: 100px;
+  border: solid 5px;
+  margin-top: 15rem;
+  align-self: flex-end ;
+  padding: 3rem 1rem 3rem 1rem;
+}
+
+#circulo1:hover{
+  background-color:#fdff00;
+}
+#circulo2:hover{
+  background-color:#fdff00;
+}
+#circulo3:hover{
+  background-color:#fdff00;
+}
+#circulo4:hover{
+  background-color:#fdff00;
+}
+#contacto{
+  background-image: url(../images/peakpx.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#contacto h2 {
+  text-align: center;
+  font-size: 3rem;
+  background-color: white;
+}
+#container-contacto{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  column-gap: 2rem;
+}
+footer{
+  text-align: center;
+}
+footer:hover{
+  font-size: 20px;
+}
+@media (max-width: 800px) {
+  #container-presentacion , #container-hf ,#container-metas{
+    flex-direction: column;
+  }
 }
