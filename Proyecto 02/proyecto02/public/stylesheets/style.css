@@ -19,12 +19,13 @@ header{
   background-position-y: -5cm;
 }
 
-#titulo-campeon{
+.titulo-campeon{
   text-align: center;
   text-transform: uppercase;
+  letter-spacing: 2px;
 }
 .glass{
-  
+  visibility: hidden;
   color: white;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
   backdrop-filter: blur(10px);
@@ -38,6 +39,16 @@ header{
   color: #fff;
   animation: neon 1s linear infinite alternate;
 }
+
+#animations-example-4 tbody td {
+  transform-origin: bottom;
+  animation: revealing-bars 4s linear infinite;
+}
+@keyframes revealing-bars {
+  0%  { transform:scaleY( 0 ) }
+  15% { transform: scaleX( 1 ); }
+}
+
 @keyframes neon {
   from {
     text-shadow: 
