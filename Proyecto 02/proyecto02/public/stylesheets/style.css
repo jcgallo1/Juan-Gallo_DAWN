@@ -19,6 +19,12 @@ header{
   background-position-y: -5cm;
 }
 
+#t-historia{
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: solid;
+  text-shadow: 2px;
+}
 .titulo-campeon{
   text-align: center;
   text-transform: uppercase;
@@ -35,10 +41,7 @@ header{
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   
 }
-.neon{
-  color: #fff;
-  animation: neon 1s linear infinite alternate;
-}
+
 
 #animations-example-4 tbody td {
   transform-origin: bottom;
@@ -49,6 +52,10 @@ header{
   15% { transform: scaleX( 1 ); }
 }
 
+.neon{
+  color: #fff;
+  animation: neon 1s linear infinite alternate;
+}
 @keyframes neon {
   from {
     text-shadow: 
@@ -67,3 +74,4 @@ header{
   }
   
 }
+

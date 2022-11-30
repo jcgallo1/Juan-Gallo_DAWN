@@ -105,7 +105,7 @@ window.onload = function () {
                             //Carrosuel de imagenes
                             document.getElementById("imagen-c1").src=`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${clave}_0.jpg`
                             document.getElementById("imagen-c2").src=`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${clave}_1.jpg`
-                            document.getElementById("imagen-c3").src=`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${clave}_3.jpg`
+                            document.getElementById("imagen-c3").src=`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${clave}_2.jpg`
                         }
                         camepeonget++
                     }
@@ -154,7 +154,7 @@ window.onload = function () {
                                     //Carrosuel de imagenes
                                     document.getElementById("imagen-c1").src = `http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${clave}_0.jpg`
                                     document.getElementById("imagen-c2").src = `http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${clave}_1.jpg`
-                                    document.getElementById("imagen-c3").src = `http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${clave}_3.jpg`
+                                    document.getElementById("imagen-c3").src = `http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${clave}_2.jpg`
                                 }
                                 camepeonget++;
                             }
@@ -171,3 +171,4 @@ window.onload = function () {
 
 
 }
+
