@@ -7,7 +7,7 @@ import { HistoriaComponent } from './componentes/historia/historia.component';
 const routes: Routes = [
   { path: "Buscador", component: BuscadorComponent },
   { path: "Estadistica", component: EstadisticaComponent },
-  { path: "Galeria", component: EstadisticaComponent },
+  { path: "Galeria", component: GaleriaComponent },
   { path: "Historia", component: HistoriaComponent },
   { path: "**", redirectTo: "Buscador" }
 ];

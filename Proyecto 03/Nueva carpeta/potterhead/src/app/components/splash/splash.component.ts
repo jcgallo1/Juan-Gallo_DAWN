@@ -11,10 +11,13 @@ export class SplashComponent implements OnInit {
   constructor(private resourcesService: ResourcesService) {
   }
 
-  ngOnInit() {
+   ngOnInit() {
     this.resourcesService.getData().subscribe(response => {
       
-      console.log(response)
+      let potterhead = localStorage.getItem("potterhead");
+      if(!potterhead) {
+        localStorage.setItem("potterhead", JSON.stringify(response));
+      }
 
     })
   }
