@@ -33,9 +33,14 @@ body{
     text-transform: uppercase;
     letter-spacing: 2px;
   }
+  #div-cm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .glass{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     color: white;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));

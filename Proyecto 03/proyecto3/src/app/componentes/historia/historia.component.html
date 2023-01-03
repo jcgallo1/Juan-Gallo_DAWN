@@ -6,14 +6,23 @@
   </header>
   <body>
     <nav class="navbar">
-      <a routerLink="/Estadistica"  >Stadistic</a>
-      <a routerLink="/Historia" class="selected neon">History</a>
-      <a routerLink="/Galeria" >Galery</a>
+      <a routerLink="/Estadistica/{{data[0].id}}"  >Stadistic</a>
+      <a routerLink="/Historia/{{data[0].id}}" class="selected neon">History</a>
+      <a routerLink="/Galeria/{{data[0].id}}" >Galery</a>
       <a routerLink="/Buscador" >Back</a>
     </nav>
+    
         <div id="contendor-g" class="container-md p-5 glass">
-          
-          
+          <div class="h1 display-1 col" id="div-cm">
+            <p>{{data[0].id}}</p>
+            <img src="http://ddragon.leagueoflegends.com/cdn/12.22.1/img/champion/{{data[0].id}}.png" alt="{{data[0].id}}">
+            <h3 class="display-1" id="titulo-campeon">{{data[0].title}}</h3>
+            <h3 id="tags-campeon">{{data[0].tags}}</h3>
+          </div>
+          <h3 class="">History</h3>
+            <p id="t-historia">{{data[0].blurb}}</p>
+            <h4 id="texto-div">Type:{{data[0].partype}}</h4>
+            
         </div>
         
       

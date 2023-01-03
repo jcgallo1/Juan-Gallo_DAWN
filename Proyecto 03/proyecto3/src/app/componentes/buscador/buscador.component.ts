@@ -28,15 +28,16 @@ function getRandomObject(): any {
   let campeones =  JSON.parse(localStorage.getItem("campeones")!);
   const array=Object.values(campeones.data)
   const randomIndex = Math.floor(Math.random() * array.length);  // Obtener un índice aleatorio entre 0 y el tamaño del arreglo
-  return randomIndex;  // Devolver el objeto en la posición aleatoria del arreglo
+  return array[randomIndex];  // Devolver el objeto en la posición aleatoria del arreglo
 }
 document.addEventListener('DOMContentLoaded', () => {
   const button = document.getElementById('boton-buscar');
   button?.addEventListener("click", handleClick);
   
-  function handleClick(this: HTMLElement) {
-    const randomObject = getRandomObject();
-    window.location.assign(`/Estadistica/${randomObject}`);
-  }
+  
 });
 
+function handleClick(this: HTMLElement) {
+    const randomObject = getRandomObject();
+    window.location.assign(`/Estadistica/${randomObject.id}`);
+  }

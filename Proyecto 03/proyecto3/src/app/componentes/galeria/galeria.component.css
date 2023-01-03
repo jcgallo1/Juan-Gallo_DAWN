@@ -2,8 +2,8 @@
 body{
     background-image: url(../../../assets/images/summonersrift.jpg);
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    background-attachment:fixed;
+    background-size:cover;
   }
   header{
     background-color: aliceblue;
@@ -47,7 +47,11 @@ body{
     
   }
   
-  
+  @media screen and (max-width: 480px) {
+    .glass {
+      flex-direction: column;
+    }
+  }
   #animations-example-4 tbody td {
     transform-origin: bottom;
     animation: revealing-bars 4s linear infinite;

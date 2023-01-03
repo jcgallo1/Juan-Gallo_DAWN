@@ -17,14 +17,13 @@ export class EstadisticaComponent {
       let campeon = JSON.parse(localStorage.getItem("campeones")!);
           
       if(campeon) {
+        console.log(id)
+        const campeones=Object.values(campeon.data) as Array<Data>;
+        const filtro= campeones.filter(data => data.id == id)
+        this.data =filtro;
+        console.log(this.data[0])
         
-        const campeones=Object.values(campeon.data);
-        const array:any= campeones[id];
-        const a= Object.values(array);
-        this.data=array;
-        console.log(this.data)
-        //console.log(cameponfilterer)
-       
+        
       
 
       }
