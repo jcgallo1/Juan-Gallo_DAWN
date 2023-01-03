@@ -1,0 +1,102 @@
+
+body{
+    background-image: url(../../../assets/images/summonersrift.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  header{
+    background-color: aliceblue;
+    padding: 3rem;
+    text-decoration: solid;
+    text-transform: uppercase;
+    font-size: 250%;
+   
+  }
+  
+  header{
+    background-image: url(../../../assets/images/ee3.gif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-y: -5cm;
+  }
+  
+  #t-historia{
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: solid;
+    text-shadow: 2px;
+  }
+  .titulo-campeon{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  .glass{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    
+  }
+  
+  
+  #animations-example-4 tbody td {
+    transform-origin: bottom;
+    animation: revealing-bars 4s linear infinite;
+  }
+  @keyframes revealing-bars {
+    0%  { transform:scaleY( 0 ) }
+    15% { transform: scaleX( 1 ); }
+  }
+  
+  .neon{
+    color: #fff;
+    animation: neon 1s linear infinite alternate;
+  }
+  @keyframes neon {
+    from {
+      text-shadow: 
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px #FF9950,
+        0 0 25px #FF9950;
+    }
+    to {
+      text-shadow: 
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px #FF9950,
+        0 0 25px #FF9950,
+        0 0 30px #FF9950;
+    }
+    
+  }
+  /* Estilos para el navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+  }
+
+  /* Estilos para los enlaces del navbar */
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+
+  /* Estilos para el elemento seleccionado */
+  .navbar .selected {
+    font-weight: bold;
+  }

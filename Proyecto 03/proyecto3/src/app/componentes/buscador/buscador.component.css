@@ -7,8 +7,11 @@ body{
   }
   header{
     background-color: aliceblue;
-    padding: 1rem;
-    margin-bottom: 1rem;
+    padding: 3rem;
+    text-decoration: solid;
+    text-transform: uppercase;
+    font-size: 250%;
+   
   }
   
   header{
@@ -76,4 +79,24 @@ body{
     }
     
   }
-  
+  /* Estilos para el navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+  }
+
+  /* Estilos para los enlaces del navbar */
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+
+  /* Estilos para el elemento seleccionado */
+  .navbar .selected {
+    font-weight: bold;
+  }

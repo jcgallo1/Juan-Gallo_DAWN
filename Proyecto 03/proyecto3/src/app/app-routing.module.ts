@@ -6,9 +6,9 @@ import { GaleriaComponent } from './componentes/galeria/galeria.component';
 import { HistoriaComponent } from './componentes/historia/historia.component';
 const routes: Routes = [
   { path: "Buscador", component: BuscadorComponent },
-  { path: "Estadistica", component: EstadisticaComponent },
-  { path: "Galeria", component: GaleriaComponent },
-  { path: "Historia", component: HistoriaComponent },
+  { path: "Estadistica/:id", component: EstadisticaComponent },
+  { path: "Galeria/:id", component: GaleriaComponent },
+  { path: "Historia/:id", component: HistoriaComponent },
   { path: "**", redirectTo: "Buscador" }
 ];
 

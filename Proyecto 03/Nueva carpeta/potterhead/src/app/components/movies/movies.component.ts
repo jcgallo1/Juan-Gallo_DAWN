@@ -13,8 +13,14 @@ export class MoviesComponent {
   constructor() {
 
     /* Leer desde el localStorage */
+    let potterhead = JSON.parse(localStorage.getItem("potterhead")!);
+      
+    if(potterhead) {
+      console.log(potterhead)
+      this.movies = potterhead as Movie[]
+    }
     
-
+  
   }
 
 }

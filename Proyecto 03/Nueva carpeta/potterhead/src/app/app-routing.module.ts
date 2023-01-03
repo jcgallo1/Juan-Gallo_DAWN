@@ -7,7 +7,7 @@ import { MovieComponent } from './components/movie/movie.component';
 const routes: Routes = [
   { path: "splash", component: SplashComponent },
   { path: "movies", component: MoviesComponent },
-  { path: "movie", component: MovieComponent },
+  { path: "movie/:id", component: MovieComponent },
   { path: "**", redirectTo: "splash" }
 ];
 
