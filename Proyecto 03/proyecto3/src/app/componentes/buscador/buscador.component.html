@@ -1,18 +1,39 @@
 <header>
   <div class="container-fluid">
-    <p class="text-center neon "> League Of Legends</p>
+    <p class="text-center neon">League Of Legends</p>
   </div>
-
 </header>
 <body>
-  
-      <div id="contendor-g" class="container-md p-5 glass">
-        <div class="d-flex justify-content-around">
-          <button id="boton-buscar" type="button" class="btn btn-primary btn-lg ">search champion</button>
-          
-        </div>
-      </div>
-     
-    
-    </body>
-    
+  <div id="contendor-g" class=" p-5 glass">
+    <div class="divImg">
+      <img
+        src="../../../assets/images/LoL_icon.svg.png"
+        width="150px"
+        alt="LoL_icon"
+      />
+    </div>
+    <div class="btn">
+      <button
+        (click)="buscar()"
+        id="boton-buscar"
+        type="button"
+        class="btn btn-primary btn-lg"
+      >
+        Random champion
+      </button>
+      <br />
+      <br />
+      <form class="d-flex">
+        <input
+          id="buscar"
+          class="form-control me-2"
+          type="text"
+          placeholder="Search"
+        />
+        <button (click)="buscarID()" class="btn btn-primary" type="button">
+          Search
+        </button>
+      </form>
+    </div>
+  </div>
+</body>

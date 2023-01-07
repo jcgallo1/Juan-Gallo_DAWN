@@ -4,32 +4,28 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-estadistica',
   templateUrl: './estadistica.component.html',
-  styleUrls: ['./estadistica.component.css']
+  styleUrls: ['./estadistica.component.css'],
 })
 export class EstadisticaComponent {
   data!: Data[];
 
   constructor(private route: ActivatedRoute) {
+    this.route.params.subscribe((params) => {
+      let id = params['id'];
 
-    this.route.params.subscribe(params => {
-      let id = params['id']; 
+      let campeon = JSON.parse(localStorage.getItem('campeones')!);
 
-      let campeon = JSON.parse(localStorage.getItem("campeones")!);
-          
-      if(campeon) {
-        console.log(id)
-        const campeones=Object.values(campeon.data) as Array<Data>;
-        const filtro= campeones.filter(data => data.id == id)
-        this.data =filtro;
-        console.log(this.data[0])
-        
-        
-      
+      if (campeon) {
+        console.log(id);
+        const campeones = Object.values(campeon.data) as Array<Data>;
 
+        const filtro = campeones.filter((data) => data.id == id);
+        if (filtro.length === 0) {
+          window.location.assign(`/buscador`);
+        }
+        this.data = filtro;
+        console.log(this.data[0]);
       }
-      
-  });
-  
+    });
   }
- 
 }

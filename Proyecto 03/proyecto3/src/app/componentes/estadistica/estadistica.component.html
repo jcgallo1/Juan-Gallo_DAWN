@@ -1,42 +1,41 @@
-<head>
-
-</head>
+<head> </head>
 <header>
   <div class="container-fluid">
-    <p class="text-center neon "> League Of Legends</p>
+    <p class="text-center neon">League Of Legends</p>
   </div>
-
 </header>
 
 <body>
   <nav class="navbar">
-    <a routerLink="/Estadistica/{{data[0].id}}" class="selected neon">Stadistic</a>
-    <a routerLink="/Historia/{{data[0].id}}">History</a>
-    <a routerLink="/Galeria/{{data[0].id}}">Galery</a>
+    <a routerLink="/Estadistica/{{ data[0].id }}" class="selected neon"
+      >Stadistic</a
+    >
+    <a routerLink="/Historia/{{ data[0].id }}">History</a>
+    <a routerLink="/Galeria/{{ data[0].id }}">Galery</a>
     <a routerLink="/Buscador">Back</a>
   </nav>
   <div id="contendor-g" class="container-md p-5 glass">
-
     <div class="row">
       <div class="h1 display-1 col" id="div-cm">
-        <p>{{data[0].id}}</p>
-        <img src="http://ddragon.leagueoflegends.com/cdn/12.22.1/img/champion/{{data[0].id}}.png" alt="{{data[0].id}}">
+        <p>{{ data[0].id }}</p>
+        <img
+          src="http://ddragon.leagueoflegends.com/cdn/12.22.1/img/champion/{{
+            data[0].id
+          }}.png"
+          alt="{{ data[0].id }}"
+        />
       </div>
       <div class="col">
-        <p class="h3">attack : {{data[0].info.attack}}</p>
-        <p class="h3">defense : {{data[0].info.defense}}</p>
-        <p class="h3">difficulty : {{data[0].info.difficulty}}</p>
-        <p class="h3">magic : {{data[0].info.magic}}</p>
-        <p class="h3">armor : {{data[0].stats.armor}}</p>
-        <p class="h3">hp : {{data[0].stats.hp}}</p>
-        <p class="h3">mp : {{data[0].stats.mp}}</p>
-        <p class="h3">movespeed : {{data[0].stats.movespeed}}</p>
+        <p class="h3">attack : {{ data[0].info.attack }}</p>
+        <p class="h3">defense : {{ data[0].info.defense }}</p>
+        <p class="h3">difficulty : {{ data[0].info.difficulty }}</p>
+        <p class="h3">magic : {{ data[0].info.magic }}</p>
+        <p class="h3">armor : {{ data[0].stats.armor }}</p>
+        <p class="h3">hp : {{ data[0].stats.hp }}</p>
+        <p class="h3">mp : {{ data[0].stats.mp }}</p>
+        <p class="h3">movespeed : {{ data[0].stats.movespeed }}</p>
       </div>
     </div>
-    <div>
-      
-    </div>
+    <div></div>
   </div>
-
-
 </body>
