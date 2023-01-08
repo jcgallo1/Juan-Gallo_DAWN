@@ -13,7 +13,11 @@ body{
     font-size: 250%;
    
   }
-  
+#contendor-g{
+  display: flex;
+  flex-direction: row;
+  gap: 2;
+}
   header{
     background-image: url(../../../assets/images/ee3.gif);
     background-repeat: no-repeat;
@@ -39,6 +43,7 @@ body{
     align-items: center;
   }
   .glass{
+
     color: white;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
     backdrop-filter: blur(10px);
