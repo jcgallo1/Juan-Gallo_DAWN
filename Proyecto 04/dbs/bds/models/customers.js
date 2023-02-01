@@ -1,35 +1,83 @@
-'use strict';
-const {
-  Model
-} = require('sequelize');
-module.exports = (sequelize, DataTypes) => {
-  class customers extends Model {
-    /**
-     * Helper method for defining associations.
-     * This method is not a part of Sequelize lifecycle.
-     * The `models/index` file will call this method automatically.
-     */
-    static associate(models) {
-      // define association here
+const Sequelize = require('sequelize');
+module.exports = function(sequelize, DataTypes) {
+  return sequelize.define('customers', {
+    customerNumber: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      primaryKey: true
+    },
+    customerName: {
+      type: DataTypes.STRING(50),
+      allowNull: false
+    },
+    contactLastName: {
+      type: DataTypes.STRING(50),
+      allowNull: false
+    },
+    contactFirstName: {
+      type: DataTypes.STRING(50),
+      allowNull: false
+    },
+    phone: {
+      type: DataTypes.STRING(50),
+      allowNull: false
+    },
+    addressLine1: {
+      type: DataTypes.STRING(50),
+      allowNull: false
+    },
+    addressLine2: {
+      type: DataTypes.STRING(50),
+      allowNull: true
+    },
+    city: {
+      type: DataTypes.STRING(50),
+      allowNull: false
+    },
+    state: {
+      type: DataTypes.STRING(50),
+      allowNull: true
+    },
+    postalCode: {
+      type: DataTypes.STRING(15),
+      allowNull: true
+    },
+    country: {
+      type: DataTypes.STRING(50),
+      allowNull: false
+    },
+    salesRepEmployeeNumber: {
+      type: DataTypes.INTEGER,
+      allowNull: true,
+      references: {
+        model: 'employees',
+        key: 'employeeNumber'
+      }
+    },
+    creditLimit: {
+      type: DataTypes.DECIMAL(10,2),
+      allowNull: true
     }
-  }
-  customers.init({
-    customerNumber: DataTypes.FLOAT,
-    customerName: DataTypes.STRING,
-    contactLastName: DataTypes.STRING,
-    contactFirstName: DataTypes.STRING,
-    phone: DataTypes.STRING,
-    addressLine1: DataTypes.STRING,
-    addressLine2: DataTypes.STRING,
-    city: DataTypes.STRING,
-    state: DataTypes.STRING,
-    postalCode: DataTypes.STRING,
-    country: DataTypes.STRING,
-    salesRepEmployeeNumber: DataTypes.FLOAT,
-    creditLimit: DataTypes.FLOAT
   }, {
     sequelize,
-    modelName: 'customers',
+    tableName: 'customers',
+    timestamps: false,
+    indexes: [
+      {
+        name: "PRIMARY",
+        unique: true,
+        using: "BTREE",
+        fields: [
+          { name: "customerNumber" },
+        ]
+      },
+      {
+        name: "salesRepEmployeeNumber",
+        using: "BTREE",
+        fields: [
+          { name: "salesRepEmployeeNumber" },
+        ]
+      },
+    ]
   });
-  return customers;
 };
