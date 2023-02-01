@@ -1,0 +1,66 @@
+<div
+  class="modal fade"
+  id="exampleModal_<%= photo.id %>"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">
+          Actualizar foto: <%= photo.id+1 %>
+        </h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <form
+          class="row g-3"
+          method="post"
+          action="/photos/update/<%= photo.id %>"
+        >
+          <div class="form-floating mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="floatingInput_titulo"
+              placeholder="s"
+              name="titulo"
+            />
+            <label for="floatingInput_titulo">
+              Titulo Actual: <%= photo.titulo %>
+            </label>
+          </div>
+          <div class="form-floating">
+            <input
+              type="text"
+              class="form-control"
+              id="floatingInput_descripcion"
+              placeholder="s"
+              name="descripcion"
+            />
+            <label for="floatingInput_descripcion">
+              Descripcion Actual: <%= photo.descripcion %>
+            </label>
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary mb-3">
+              Actualizar
+            </button>
+          </div>
+        </form>
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Close
+        </button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+    </div>
+  </div>
+</div>
